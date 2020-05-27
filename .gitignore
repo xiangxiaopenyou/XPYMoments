@@ -28,6 +28,18 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+.build/
+
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
@@ -35,6 +47,16 @@ xcuserdata/
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+*.xcworkspace
+*.xcuserstate
+project.xcworkspace
+xcuserdata
+UserInterfaceState.xcuserstate
+project.xcworkspace/
+xcuserdata/
+UserInterface.xcuserstate
 
 # Carthage
 #
@@ -52,7 +74,7 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/Preview.html
-fastlane/screenshots
+fastlane/screenshots/**/*.png
 fastlane/test_output
 
 # Code Injection
@@ -61,7 +83,3 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
-
-*.DS_Store
-
-.DS_Store
