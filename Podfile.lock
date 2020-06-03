@@ -15,20 +15,36 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - ReactiveObjC (3.1.1)
+  - SAMKeychain (1.5.3)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
   - Masonry
+  - MBProgressHUD
+  - ReactiveObjC
+  - SAMKeychain
+  - YYModel
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - Masonry
+    - MBProgressHUD
+    - ReactiveObjC
+    - SAMKeychain
+    - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 65f6467658e2cb82dcb5b83ca5df370169be1a0c
+PODFILE CHECKSUM: 242360e0d89a7612a935a7a7e25d1ff4bdbd411b
 
 COCOAPODS: 1.9.1

@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "XPYTestViewController.h"
+#import "XPYTestViewModel.h"
+#import "XPYLoginViewController.h"
+#import "XPYLoginViewModel.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +21,11 @@
 #pragma mark - Life cycle
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIViewController *controller = [[UIViewController alloc] init];
-    controller.view.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = controller;
+//    XPYTestViewController *controller = [[XPYTestViewController alloc] initWithViewModel:[[XPYTestViewModel alloc] init]];
+//    controller.view.backgroundColor = [UIColor whiteColor];
+    
+    XPYLoginViewController *loginController = [[XPYLoginViewController alloc] initWithViewModel:[[XPYLoginViewModel alloc] init]];
+    self.window.rootViewController = loginController;
     [self.window makeKeyAndVisible];
     return YES;
 }

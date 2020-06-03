@@ -3,15 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EA67F80C22510216F51503D /* libPods-XPYMoments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F8586A6DF8A7FAC351C49C /* libPods-XPYMoments.a */; };
 		6C196250247E498C004EAE3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C19624F247E498C004EAE3B /* AppDelegate.m */; };
 		6C19625B247E4991004EAE3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C19625A247E4991004EAE3B /* Assets.xcassets */; };
 		6C19625E247E4991004EAE3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C19625C247E4991004EAE3B /* LaunchScreen.storyboard */; };
 		6C196261247E4991004EAE3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C196260247E4991004EAE3B /* main.m */; };
-		F9E073336B42BBFC19718F35 /* libPods-XPYMoments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 702DAFE89A6C5481912DEC92 /* libPods-XPYMoments.a */; };
+		6C196271247E68C8004EAE3B /* XPYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C196270247E68C8004EAE3B /* XPYBaseViewController.m */; };
+		6C196278247E6E50004EAE3B /* XPYBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C196277247E6E50004EAE3B /* XPYBaseViewModel.m */; };
+		6C19627C247E6F11004EAE3B /* XPYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C19627B247E6F11004EAE3B /* XPYTestViewController.m */; };
+		6C196280247E6F39004EAE3B /* XPYTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C19627F247E6F39004EAE3B /* XPYTestViewModel.m */; };
+		6C196286247F64E7004EAE3B /* XPYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C196285247F64E7004EAE3B /* XPYLoginViewController.m */; };
+		6C19628A247F69F2004EAE3B /* XPYLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C196289247F69F2004EAE3B /* XPYLoginViewModel.m */; };
+		6C19628F2480A99D004EAE3B /* XPYViewModelServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C19628E2480A99D004EAE3B /* XPYViewModelServices.m */; };
+		6CA5063524863293009CDA2F /* XPYNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5063424863293009CDA2F /* XPYNetworkService.m */; };
+		6CA5063B24863D90009CDA2F /* XPYAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5063A24863D90009CDA2F /* XPYAPIManager.m */; };
+		6CA50640248647E2009CDA2F /* XPYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5063F248647E2009CDA2F /* XPYBaseModel.m */; };
+		6CA5064324864886009CDA2F /* XPYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5064224864886009CDA2F /* XPYUserModel.m */; };
+		6CA5064C24864E7B009CDA2F /* XPYUserAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5064B24864E7B009CDA2F /* XPYUserAPIManager.m */; };
+		6CDFAF6D2484A55100256B56 /* XPYConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFAF6C2484A55100256B56 /* XPYConstant.m */; };
+		6CDFAF702484AF0300256B56 /* XPYNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +36,42 @@
 		6C19625D247E4991004EAE3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C19625F247E4991004EAE3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C196260247E4991004EAE3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		702DAFE89A6C5481912DEC92 /* libPods-XPYMoments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPYMoments.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C19626F247E68C8004EAE3B /* XPYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYBaseViewController.h; sourceTree = "<group>"; };
+		6C196270247E68C8004EAE3B /* XPYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYBaseViewController.m; sourceTree = "<group>"; };
+		6C196276247E6E50004EAE3B /* XPYBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYBaseViewModel.h; sourceTree = "<group>"; };
+		6C196277247E6E50004EAE3B /* XPYBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYBaseViewModel.m; sourceTree = "<group>"; };
+		6C19627A247E6F11004EAE3B /* XPYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTestViewController.h; sourceTree = "<group>"; };
+		6C19627B247E6F11004EAE3B /* XPYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTestViewController.m; sourceTree = "<group>"; };
+		6C19627E247E6F39004EAE3B /* XPYTestViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTestViewModel.h; sourceTree = "<group>"; };
+		6C19627F247E6F39004EAE3B /* XPYTestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTestViewModel.m; sourceTree = "<group>"; };
+		6C196284247F64E7004EAE3B /* XPYLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYLoginViewController.h; sourceTree = "<group>"; };
+		6C196285247F64E7004EAE3B /* XPYLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYLoginViewController.m; sourceTree = "<group>"; };
+		6C196288247F69F2004EAE3B /* XPYLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYLoginViewModel.h; sourceTree = "<group>"; };
+		6C196289247F69F2004EAE3B /* XPYLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYLoginViewModel.m; sourceTree = "<group>"; };
+		6C19628C247F6A8D004EAE3B /* XPYMoments.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMoments.pch; sourceTree = "<group>"; };
+		6C19628D2480A99D004EAE3B /* XPYViewModelServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYViewModelServices.h; sourceTree = "<group>"; };
+		6C19628E2480A99D004EAE3B /* XPYViewModelServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYViewModelServices.m; sourceTree = "<group>"; };
+		6C1962902480AF7D004EAE3B /* XPYTransitionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTransitionProtocol.h; sourceTree = "<group>"; };
+		6CA5063324863293009CDA2F /* XPYNetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYNetworkService.h; sourceTree = "<group>"; };
+		6CA5063424863293009CDA2F /* XPYNetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYNetworkService.m; sourceTree = "<group>"; };
+		6CA5063924863D90009CDA2F /* XPYAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYAPIManager.h; sourceTree = "<group>"; };
+		6CA5063A24863D90009CDA2F /* XPYAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYAPIManager.m; sourceTree = "<group>"; };
+		6CA5063E248647E2009CDA2F /* XPYBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYBaseModel.h; sourceTree = "<group>"; };
+		6CA5063F248647E2009CDA2F /* XPYBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYBaseModel.m; sourceTree = "<group>"; };
+		6CA5064124864886009CDA2F /* XPYUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYUserModel.h; sourceTree = "<group>"; };
+		6CA5064224864886009CDA2F /* XPYUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYUserModel.m; sourceTree = "<group>"; };
+		6CA5064A24864E7B009CDA2F /* XPYUserAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYUserAPIManager.h; sourceTree = "<group>"; };
+		6CA5064B24864E7B009CDA2F /* XPYUserAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYUserAPIManager.m; sourceTree = "<group>"; };
+		6CDFAF6A2484A3A800256B56 /* XPYMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMacros.h; sourceTree = "<group>"; };
+		6CDFAF6B2484A55100256B56 /* XPYConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYConstant.h; sourceTree = "<group>"; };
+		6CDFAF6C2484A55100256B56 /* XPYConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYConstant.m; sourceTree = "<group>"; };
+		6CDFAF6E2484AF0300256B56 /* XPYNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYNetworkManager.h; sourceTree = "<group>"; };
+		6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYNetworkManager.m; sourceTree = "<group>"; };
+		6CDFAF712484E52C00256B56 /* XPYHTTPRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYHTTPRequestProtocol.h; sourceTree = "<group>"; };
+		6CDFAF732484EBCF00256B56 /* XPYEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYEnums.h; sourceTree = "<group>"; };
 		8C913CB48FFDF1D91FC10E1A /* Pods-XPYMoments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPYMoments.release.xcconfig"; path = "Target Support Files/Pods-XPYMoments/Pods-XPYMoments.release.xcconfig"; sourceTree = "<group>"; };
 		AE7AFAF554AA95800D05B10B /* Pods-XPYMoments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPYMoments.debug.xcconfig"; path = "Target Support Files/Pods-XPYMoments/Pods-XPYMoments.debug.xcconfig"; sourceTree = "<group>"; };
+		C5F8586A6DF8A7FAC351C49C /* libPods-XPYMoments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPYMoments.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E073336B42BBFC19718F35 /* libPods-XPYMoments.a in Frameworks */,
+				5EA67F80C22510216F51503D /* libPods-XPYMoments.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +111,7 @@
 				6C196268247E528B004EAE3B /* View */,
 				6C19626A247E5295004EAE3B /* ViewModel */,
 				6C196269247E5290004EAE3B /* Model */,
+				6CA5064724864D83009CDA2F /* API */,
 				6C19626D247E5556004EAE3B /* Macros */,
 				6C19626C247E551E004EAE3B /* Utils */,
 				6C19626B247E54FA004EAE3B /* Vendor */,
@@ -73,6 +121,7 @@
 				6C19625C247E4991004EAE3B /* LaunchScreen.storyboard */,
 				6C19625F247E4991004EAE3B /* Info.plist */,
 				6C196260247E4991004EAE3B /* main.m */,
+				6C19628C247F6A8D004EAE3B /* XPYMoments.pch */,
 			);
 			path = XPYMoments;
 			sourceTree = "<group>";
@@ -80,6 +129,9 @@
 		6C196267247E5272004EAE3B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6C19626E247E68A6004EAE3B /* Base */,
+				6C196283247F64CB004EAE3B /* Login */,
+				6C196279247E6EFB004EAE3B /* Test */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -94,6 +146,8 @@
 		6C196269247E5290004EAE3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6CA5063C24864761009CDA2F /* Base */,
+				6CA5063D24864771009CDA2F /* User */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +155,9 @@
 		6C19626A247E5295004EAE3B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				6C196275247E6B43004EAE3B /* Base */,
+				6C19627D247E6F15004EAE3B /* Test */,
+				6C196287247F64F3004EAE3B /* Login */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -115,6 +172,7 @@
 		6C19626C247E551E004EAE3B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6C1962912480E1E0004EAE3B /* Network */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -122,14 +180,148 @@
 		6C19626D247E5556004EAE3B /* Macros */ = {
 			isa = PBXGroup;
 			children = (
+				6CDFAF6A2484A3A800256B56 /* XPYMacros.h */,
+				6CDFAF732484EBCF00256B56 /* XPYEnums.h */,
+				6CDFAF6B2484A55100256B56 /* XPYConstant.h */,
+				6CDFAF6C2484A55100256B56 /* XPYConstant.m */,
 			);
 			path = Macros;
+			sourceTree = "<group>";
+		};
+		6C19626E247E68A6004EAE3B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C19626F247E68C8004EAE3B /* XPYBaseViewController.h */,
+				6C196270247E68C8004EAE3B /* XPYBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C196275247E6B43004EAE3B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C196276247E6E50004EAE3B /* XPYBaseViewModel.h */,
+				6C196277247E6E50004EAE3B /* XPYBaseViewModel.m */,
+				6C1962902480AF7D004EAE3B /* XPYTransitionProtocol.h */,
+				6C19628D2480A99D004EAE3B /* XPYViewModelServices.h */,
+				6C19628E2480A99D004EAE3B /* XPYViewModelServices.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C196279247E6EFB004EAE3B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				6C19627A247E6F11004EAE3B /* XPYTestViewController.h */,
+				6C19627B247E6F11004EAE3B /* XPYTestViewController.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		6C19627D247E6F15004EAE3B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				6C19627E247E6F39004EAE3B /* XPYTestViewModel.h */,
+				6C19627F247E6F39004EAE3B /* XPYTestViewModel.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		6C196283247F64CB004EAE3B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6C196284247F64E7004EAE3B /* XPYLoginViewController.h */,
+				6C196285247F64E7004EAE3B /* XPYLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6C196287247F64F3004EAE3B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6C196288247F69F2004EAE3B /* XPYLoginViewModel.h */,
+				6C196289247F69F2004EAE3B /* XPYLoginViewModel.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6C1962912480E1E0004EAE3B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6CA506372486395E009CDA2F /* Manager */,
+				6CA5064D24865862009CDA2F /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6CA506372486395E009CDA2F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFAF6E2484AF0300256B56 /* XPYNetworkManager.h */,
+				6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6CA5063C24864761009CDA2F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6CA5063E248647E2009CDA2F /* XPYBaseModel.h */,
+				6CA5063F248647E2009CDA2F /* XPYBaseModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6CA5063D24864771009CDA2F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				6CA5064124864886009CDA2F /* XPYUserModel.h */,
+				6CA5064224864886009CDA2F /* XPYUserModel.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		6CA5064724864D83009CDA2F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6CA5064824864DBE009CDA2F /* Base */,
+				6CA5064924864E3A009CDA2F /* User */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6CA5064824864DBE009CDA2F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6CA5063924863D90009CDA2F /* XPYAPIManager.h */,
+				6CA5063A24863D90009CDA2F /* XPYAPIManager.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6CA5064924864E3A009CDA2F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				6CA5064A24864E7B009CDA2F /* XPYUserAPIManager.h */,
+				6CA5064B24864E7B009CDA2F /* XPYUserAPIManager.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		6CA5064D24865862009CDA2F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFAF712484E52C00256B56 /* XPYHTTPRequestProtocol.h */,
+				6CA5063324863293009CDA2F /* XPYNetworkService.h */,
+				6CA5063424863293009CDA2F /* XPYNetworkService.m */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		91841E581F78C7205F02EA16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				702DAFE89A6C5481912DEC92 /* libPods-XPYMoments.a */,
+				C5F8586A6DF8A7FAC351C49C /* libPods-XPYMoments.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +346,7 @@
 				6C196247247E498C004EAE3B /* Sources */,
 				6C196248247E498C004EAE3B /* Frameworks */,
 				6C196249247E498C004EAE3B /* Resources */,
+				9B6BFD7AE18CC34B8444D930 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +402,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9B6BFD7AE18CC34B8444D930 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XPYMoments/Pods-XPYMoments-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XPYMoments/Pods-XPYMoments-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XPYMoments/Pods-XPYMoments-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ED4981002FDF71F3BF1E4242 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,8 +448,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C196280247E6F39004EAE3B /* XPYTestViewModel.m in Sources */,
+				6C19627C247E6F11004EAE3B /* XPYTestViewController.m in Sources */,
 				6C196250247E498C004EAE3B /* AppDelegate.m in Sources */,
+				6CA5064C24864E7B009CDA2F /* XPYUserAPIManager.m in Sources */,
+				6CA5064324864886009CDA2F /* XPYUserModel.m in Sources */,
+				6CDFAF6D2484A55100256B56 /* XPYConstant.m in Sources */,
+				6CA50640248647E2009CDA2F /* XPYBaseModel.m in Sources */,
+				6C19628F2480A99D004EAE3B /* XPYViewModelServices.m in Sources */,
+				6C196278247E6E50004EAE3B /* XPYBaseViewModel.m in Sources */,
+				6CA5063B24863D90009CDA2F /* XPYAPIManager.m in Sources */,
+				6C19628A247F69F2004EAE3B /* XPYLoginViewModel.m in Sources */,
+				6C196271247E68C8004EAE3B /* XPYBaseViewController.m in Sources */,
 				6C196261247E4991004EAE3B /* main.m in Sources */,
+				6C196286247F64E7004EAE3B /* XPYLoginViewController.m in Sources */,
+				6CA5063524863293009CDA2F /* XPYNetworkService.m in Sources */,
+				6CDFAF702484AF0300256B56 /* XPYNetworkManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +598,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202005271602;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XPYMoments/XPYMoments.pch";
 				INFOPLIST_FILE = XPYMoments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,6 +619,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202005271602;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XPYMoments/XPYMoments.pch";
 				INFOPLIST_FILE = XPYMoments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
