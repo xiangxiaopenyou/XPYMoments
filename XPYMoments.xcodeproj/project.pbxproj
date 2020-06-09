@@ -19,11 +19,10 @@
 		6C196286247F64E7004EAE3B /* XPYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C196285247F64E7004EAE3B /* XPYLoginViewController.m */; };
 		6C19628A247F69F2004EAE3B /* XPYLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C196289247F69F2004EAE3B /* XPYLoginViewModel.m */; };
 		6C19628F2480A99D004EAE3B /* XPYViewModelServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C19628E2480A99D004EAE3B /* XPYViewModelServices.m */; };
+		6C9D1FE724889E540055BD04 /* XPYNetworkService+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9D1FE624889E540055BD04 /* XPYNetworkService+User.m */; };
 		6CA5063524863293009CDA2F /* XPYNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5063424863293009CDA2F /* XPYNetworkService.m */; };
-		6CA5063B24863D90009CDA2F /* XPYAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5063A24863D90009CDA2F /* XPYAPIManager.m */; };
 		6CA50640248647E2009CDA2F /* XPYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5063F248647E2009CDA2F /* XPYBaseModel.m */; };
 		6CA5064324864886009CDA2F /* XPYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5064224864886009CDA2F /* XPYUserModel.m */; };
-		6CA5064C24864E7B009CDA2F /* XPYUserAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5064B24864E7B009CDA2F /* XPYUserAPIManager.m */; };
 		6CDFAF6D2484A55100256B56 /* XPYConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFAF6C2484A55100256B56 /* XPYConstant.m */; };
 		6CDFAF702484AF0300256B56 /* XPYNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */; };
 /* End PBXBuildFile section */
@@ -52,22 +51,19 @@
 		6C19628D2480A99D004EAE3B /* XPYViewModelServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYViewModelServices.h; sourceTree = "<group>"; };
 		6C19628E2480A99D004EAE3B /* XPYViewModelServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYViewModelServices.m; sourceTree = "<group>"; };
 		6C1962902480AF7D004EAE3B /* XPYTransitionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTransitionProtocol.h; sourceTree = "<group>"; };
+		6C9D1FE524889E540055BD04 /* XPYNetworkService+User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPYNetworkService+User.h"; sourceTree = "<group>"; };
+		6C9D1FE624889E540055BD04 /* XPYNetworkService+User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XPYNetworkService+User.m"; sourceTree = "<group>"; };
 		6CA5063324863293009CDA2F /* XPYNetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYNetworkService.h; sourceTree = "<group>"; };
 		6CA5063424863293009CDA2F /* XPYNetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYNetworkService.m; sourceTree = "<group>"; };
-		6CA5063924863D90009CDA2F /* XPYAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYAPIManager.h; sourceTree = "<group>"; };
-		6CA5063A24863D90009CDA2F /* XPYAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYAPIManager.m; sourceTree = "<group>"; };
 		6CA5063E248647E2009CDA2F /* XPYBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYBaseModel.h; sourceTree = "<group>"; };
 		6CA5063F248647E2009CDA2F /* XPYBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYBaseModel.m; sourceTree = "<group>"; };
 		6CA5064124864886009CDA2F /* XPYUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYUserModel.h; sourceTree = "<group>"; };
 		6CA5064224864886009CDA2F /* XPYUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYUserModel.m; sourceTree = "<group>"; };
-		6CA5064A24864E7B009CDA2F /* XPYUserAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYUserAPIManager.h; sourceTree = "<group>"; };
-		6CA5064B24864E7B009CDA2F /* XPYUserAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYUserAPIManager.m; sourceTree = "<group>"; };
 		6CDFAF6A2484A3A800256B56 /* XPYMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMacros.h; sourceTree = "<group>"; };
 		6CDFAF6B2484A55100256B56 /* XPYConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYConstant.h; sourceTree = "<group>"; };
 		6CDFAF6C2484A55100256B56 /* XPYConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYConstant.m; sourceTree = "<group>"; };
 		6CDFAF6E2484AF0300256B56 /* XPYNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYNetworkManager.h; sourceTree = "<group>"; };
 		6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYNetworkManager.m; sourceTree = "<group>"; };
-		6CDFAF712484E52C00256B56 /* XPYHTTPRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYHTTPRequestProtocol.h; sourceTree = "<group>"; };
 		6CDFAF732484EBCF00256B56 /* XPYEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYEnums.h; sourceTree = "<group>"; };
 		8C913CB48FFDF1D91FC10E1A /* Pods-XPYMoments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPYMoments.release.xcconfig"; path = "Target Support Files/Pods-XPYMoments/Pods-XPYMoments.release.xcconfig"; sourceTree = "<group>"; };
 		AE7AFAF554AA95800D05B10B /* Pods-XPYMoments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPYMoments.debug.xcconfig"; path = "Target Support Files/Pods-XPYMoments/Pods-XPYMoments.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +107,6 @@
 				6C196268247E528B004EAE3B /* View */,
 				6C19626A247E5295004EAE3B /* ViewModel */,
 				6C196269247E5290004EAE3B /* Model */,
-				6CA5064724864D83009CDA2F /* API */,
 				6C19626D247E5556004EAE3B /* Macros */,
 				6C19626C247E551E004EAE3B /* Utils */,
 				6C19626B247E54FA004EAE3B /* Vendor */,
@@ -172,6 +167,7 @@
 		6C19626C247E551E004EAE3B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6C7C5B582488F556007951F5 /* FileManager */,
 				6C1962912480E1E0004EAE3B /* Network */,
 			);
 			path = Utils;
@@ -200,11 +196,11 @@
 		6C196275247E6B43004EAE3B /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				6C196276247E6E50004EAE3B /* XPYBaseViewModel.h */,
-				6C196277247E6E50004EAE3B /* XPYBaseViewModel.m */,
 				6C1962902480AF7D004EAE3B /* XPYTransitionProtocol.h */,
 				6C19628D2480A99D004EAE3B /* XPYViewModelServices.h */,
 				6C19628E2480A99D004EAE3B /* XPYViewModelServices.m */,
+				6C196276247E6E50004EAE3B /* XPYBaseViewModel.h */,
+				6C196277247E6E50004EAE3B /* XPYBaseViewModel.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -248,19 +244,26 @@
 		6C1962912480E1E0004EAE3B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				6CA506372486395E009CDA2F /* Manager */,
+				6CA506372486395E009CDA2F /* Request */,
 				6CA5064D24865862009CDA2F /* Service */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		6CA506372486395E009CDA2F /* Manager */ = {
+		6C7C5B582488F556007951F5 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		6CA506372486395E009CDA2F /* Request */ = {
 			isa = PBXGroup;
 			children = (
 				6CDFAF6E2484AF0300256B56 /* XPYNetworkManager.h */,
 				6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */,
 			);
-			path = Manager;
+			path = Request;
 			sourceTree = "<group>";
 		};
 		6CA5063C24864761009CDA2F /* Base */ = {
@@ -277,33 +280,8 @@
 			children = (
 				6CA5064124864886009CDA2F /* XPYUserModel.h */,
 				6CA5064224864886009CDA2F /* XPYUserModel.m */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
-		6CA5064724864D83009CDA2F /* API */ = {
-			isa = PBXGroup;
-			children = (
-				6CA5064824864DBE009CDA2F /* Base */,
-				6CA5064924864E3A009CDA2F /* User */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		6CA5064824864DBE009CDA2F /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6CA5063924863D90009CDA2F /* XPYAPIManager.h */,
-				6CA5063A24863D90009CDA2F /* XPYAPIManager.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6CA5064924864E3A009CDA2F /* User */ = {
-			isa = PBXGroup;
-			children = (
-				6CA5064A24864E7B009CDA2F /* XPYUserAPIManager.h */,
-				6CA5064B24864E7B009CDA2F /* XPYUserAPIManager.m */,
+				6C9D1FE524889E540055BD04 /* XPYNetworkService+User.h */,
+				6C9D1FE624889E540055BD04 /* XPYNetworkService+User.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -311,7 +289,6 @@
 		6CA5064D24865862009CDA2F /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				6CDFAF712484E52C00256B56 /* XPYHTTPRequestProtocol.h */,
 				6CA5063324863293009CDA2F /* XPYNetworkService.h */,
 				6CA5063424863293009CDA2F /* XPYNetworkService.m */,
 			);
@@ -451,13 +428,12 @@
 				6C196280247E6F39004EAE3B /* XPYTestViewModel.m in Sources */,
 				6C19627C247E6F11004EAE3B /* XPYTestViewController.m in Sources */,
 				6C196250247E498C004EAE3B /* AppDelegate.m in Sources */,
-				6CA5064C24864E7B009CDA2F /* XPYUserAPIManager.m in Sources */,
 				6CA5064324864886009CDA2F /* XPYUserModel.m in Sources */,
 				6CDFAF6D2484A55100256B56 /* XPYConstant.m in Sources */,
 				6CA50640248647E2009CDA2F /* XPYBaseModel.m in Sources */,
 				6C19628F2480A99D004EAE3B /* XPYViewModelServices.m in Sources */,
 				6C196278247E6E50004EAE3B /* XPYBaseViewModel.m in Sources */,
-				6CA5063B24863D90009CDA2F /* XPYAPIManager.m in Sources */,
+				6C9D1FE724889E540055BD04 /* XPYNetworkService+User.m in Sources */,
 				6C19628A247F69F2004EAE3B /* XPYLoginViewModel.m in Sources */,
 				6C196271247E68C8004EAE3B /* XPYBaseViewController.m in Sources */,
 				6C196261247E4991004EAE3B /* main.m in Sources */,

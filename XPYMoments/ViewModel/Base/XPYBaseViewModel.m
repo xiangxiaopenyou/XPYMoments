@@ -7,7 +7,6 @@
 //
 
 #import "XPYBaseViewModel.h"
-#import "XPYViewModelServices.h"
 
 @interface XPYBaseViewModel ()
 
@@ -16,11 +15,21 @@
 @end
 
 @implementation XPYBaseViewModel
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    // 保证每次初始化都调用initialize方法
+    XPYBaseViewModel *viewModel = [super allocWithZone:zone];
+    @weakify(viewModel)
+    [[viewModel rac_signalForSelector:@selector(initWithServices:)] subscribeNext:^(RACTuple * _Nullable x) {
+        @strongify(viewModel)
+        [viewModel initialize];
+    }];
+    return viewModel;
+}
 
-- (instancetype)init {
+- (instancetype)initWithServices:(XPYViewModelServices *)services {
     self = [super init];
     if (self) {
-        [self initialize];
+        self.services = services;
     }
     return self;
 }

@@ -42,6 +42,10 @@
         self.manager.requestSerializer.timeoutInterval = 30;
         // 默认响应数据可接受类型集合
         self.manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/*", nil];
+        // 默认可使用不受信任证书
+        self.manager.securityPolicy.allowInvalidCertificates = YES;
+        // 默认不验证域名
+        self.manager.securityPolicy.validatesDomainName = NO;
         // 网络状态栏默认开启
         [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
         // 默认打印log

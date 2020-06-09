@@ -23,6 +23,7 @@
 
 @implementation XPYLoginViewController
 
+/// 从父类(XPYBaseViewController)中查找Set和Get方法
 @dynamic viewModel;
 
 #pragma mark - Life cycle
@@ -66,12 +67,24 @@
     
     RAC(self.loginButton, enabled) = self.viewModel.loginValidSignal;
     
+    RAC(self.loginButton, backgroundColor) = [self.viewModel.loginValidSignal map:^id _Nullable(id  _Nullable value) {
+        return [value boolValue] ? [UIColor redColor] : [UIColor grayColor];
+    }];
+    
     [[self.loginButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         NSLog(@"点击登录");
-        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        [[self.viewModel.loginCommand execute:nil] subscribeCompleted:^{
+        [self.viewModel.loginCommand execute:nil];
+    }];
+    
+    // HUD
+    [[self.viewModel.loginCommand.executing skip:1] subscribeNext:^(NSNumber * _Nullable x) {
+        if (x.boolValue) {
+            [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        } else {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
-        }];
+        }
+    } error:^(NSError * _Nullable error) {
+    } completed:^{
     }];
 }
 

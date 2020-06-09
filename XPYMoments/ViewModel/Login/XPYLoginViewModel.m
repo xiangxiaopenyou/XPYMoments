@@ -7,7 +7,7 @@
 //
 
 #import "XPYLoginViewModel.h"
-#import "XPYUserAPIManager.h"
+#import "XPYNetworkService+User.h"
 
 @interface XPYLoginViewModel ()
 
@@ -24,16 +24,18 @@
     }];
     
     self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
-        return [[[self loginRequest] doNext:^(id  _Nullable x) {
+        return [[[[self loginRequest] doNext:^(id  _Nullable x) {
             // 请求完成之后的操作
         }] doCompleted:^{
+            
+        }] doError:^(NSError * _Nonnull error) {
             
         }];
     }];
 }
 
 - (RACSignal *)loginRequest {
-    return [[XPYUserAPIManager new] loadData];
+    return [self.services.networkService homepageData];
 }
 
 @end

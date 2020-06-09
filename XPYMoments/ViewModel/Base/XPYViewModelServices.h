@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "XPYTransitionProtocol.h"
+#import "XPYNetworkService.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XPYViewModelServices : NSObject <XPYTransitionProtocol>
+
+/// 网络请求服务
+@property (nonatomic, strong, readonly) XPYNetworkService *networkService;
 
 @end
 

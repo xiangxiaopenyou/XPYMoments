@@ -8,8 +8,23 @@
 
 #import "XPYViewModelServices.h"
 
+@interface XPYViewModelServices ()
+
+@property (nonatomic, strong) XPYNetworkService *networkService;
+
+@end
+
 @implementation XPYViewModelServices
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.networkService = [[XPYNetworkService alloc] init];
+    }
+    return self;
+}
+
+#pragma mark - XPYTransitionProtocol
 - (void)dismissViewModelAnimated:(BOOL)animated completion:(XPYVoidHandler)completion {
 }
 

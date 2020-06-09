@@ -7,7 +7,8 @@
 //  转场协议push、present
 
 #import <Foundation/Foundation.h>
-#import "XPYBaseViewModel.h"
+
+@class XPYBaseViewModel;
 
 @protocol XPYTransitionProtocol <NSObject>
 

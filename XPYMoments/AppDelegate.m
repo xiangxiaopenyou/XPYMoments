@@ -12,6 +12,8 @@
 #import "XPYLoginViewController.h"
 #import "XPYLoginViewModel.h"
 
+#import "XPYViewModelServices.h"
+
 @interface AppDelegate ()
 
 @end
@@ -24,7 +26,7 @@
 //    XPYTestViewController *controller = [[XPYTestViewController alloc] initWithViewModel:[[XPYTestViewModel alloc] init]];
 //    controller.view.backgroundColor = [UIColor whiteColor];
     
-    XPYLoginViewController *loginController = [[XPYLoginViewController alloc] initWithViewModel:[[XPYLoginViewModel alloc] init]];
+    XPYLoginViewController *loginController = [[XPYLoginViewController alloc] initWithViewModel:[[XPYLoginViewModel alloc] initWithServices:[XPYViewModelServices new]]];
     self.window.rootViewController = loginController;
     [self.window makeKeyAndVisible];
     return YES;

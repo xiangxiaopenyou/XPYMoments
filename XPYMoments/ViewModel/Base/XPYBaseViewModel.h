@@ -7,13 +7,20 @@
 //  所有视图模型的基类
 
 #import <Foundation/Foundation.h>
+#import "XPYViewModelServices.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XPYBaseViewModel : NSObject
 
+/// 统一初始化方法
+/// @param services 服务
+- (instancetype)initWithServices:(XPYViewModelServices *)services;
+
 /// 提供给子类复写初始化数据方法
 - (void)initialize;
+
+@property (nonatomic, strong, readonly) XPYViewModelServices *services;
 
 @end
 
