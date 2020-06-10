@@ -8,3 +8,4 @@
 
 #import "XPYConstant.h"
 
+NSString * const XPYSwitchRootViewControllerNotification = @"XPYSwitchRootViewControllerNotification";

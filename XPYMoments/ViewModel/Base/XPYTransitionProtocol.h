@@ -41,4 +41,8 @@
 /// @param completion 完成回调Block
 - (void)dismissViewModelAnimated:(BOOL)animated completion:(XPYVoidHandler)completion;
 
+/// 重新设置根控制器
+/// @param viewModel 视图模型
+- (void)resetRootViewModel:(XPYBaseViewModel *)viewModel;
+
 @end

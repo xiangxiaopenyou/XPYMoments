@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 提供给子类复写绑定视图模型方法
 - (void)bindViewModel;
 
+@property (nonatomic, strong, readonly) XPYBaseViewModel *viewModel;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,7 +7,16 @@
 //
 
 #import "XPYTestViewModel.h"
+#import "XPYTestPushViewModel.h"
 
 @implementation XPYTestViewModel
+
+- (void)initialize {
+    self.pushCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        XPYTestPushViewModel *testPushViewModel = [[XPYTestPushViewModel alloc] initWithServices:self.services];
+        [self.services pushViewModel:testPushViewModel animated:YES];
+        return [RACSignal empty];
+    }];
+}
 
 @end

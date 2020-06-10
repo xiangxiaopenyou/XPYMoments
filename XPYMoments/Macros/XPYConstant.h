@@ -8,3 +8,6 @@
 
 #pragma mark - Block
 typedef void(^XPYVoidHandler)(void);
+
+#pragma mark - Notifications
+FOUNDATION_EXTERN NSString * const XPYSwitchRootViewControllerNotification;
