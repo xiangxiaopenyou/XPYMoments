@@ -8,4 +8,8 @@
 
 #import "XPYEnums.h"
 #import "XPYConstant.h"
+#import "XPYConstInline.h"
+
+/// App Document文件夹路径
+#define XPYDocumentDirectory NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject
 

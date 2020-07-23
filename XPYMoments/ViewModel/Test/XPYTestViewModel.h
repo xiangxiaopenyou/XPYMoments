@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XPYTestViewModel : XPYBaseViewModel
 
-@property (nonatomic, strong) RACCommand *pushCommand;
+@property (nonatomic, strong, readonly) RACCommand *pushCommand;
 
 @end
 

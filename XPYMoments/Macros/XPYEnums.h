@@ -10,7 +10,7 @@
 #ifndef XPYEnums_h
 #define XPYEnums_h
 
-/// 网络请求
+/// 网络状态
 typedef NS_ENUM(NSUInteger, XPYNetworkStatus) {
     XPYNetworkStatusUnknown,        // 未知网络
     XPYNetworkStatusUnreachable,    // 没有网络

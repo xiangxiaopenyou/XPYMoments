@@ -19,10 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *passwordString;
 
 /// 登录按钮是否有效信号
-@property (nonatomic, strong) RACSignal *loginValidSignal;
+@property (nonatomic, strong, readonly) RACSignal *loginValidSignal;
 
 /// 登录命令
-@property (nonatomic, strong) RACCommand *loginCommand;
+@property (nonatomic, strong, readonly) RACCommand *loginCommand;
 
 @end
 

@@ -30,6 +30,9 @@
 		6CA5064324864886009CDA2F /* XPYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5064224864886009CDA2F /* XPYUserModel.m */; };
 		6CDFAF6D2484A55100256B56 /* XPYConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFAF6C2484A55100256B56 /* XPYConstant.m */; };
 		6CDFAF702484AF0300256B56 /* XPYNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */; };
+		6CED67D924C53D01002AA820 /* XPYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED67D824C53D01002AA820 /* XPYTabBarController.m */; };
+		6CED67DC24C57823002AA820 /* XPYArchiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED67DB24C57823002AA820 /* XPYArchiveManager.m */; };
+		6CED67E224C686A3002AA820 /* XPYUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED67E124C686A3002AA820 /* XPYUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,14 @@
 		6CDFAF6E2484AF0300256B56 /* XPYNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYNetworkManager.h; sourceTree = "<group>"; };
 		6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYNetworkManager.m; sourceTree = "<group>"; };
 		6CDFAF732484EBCF00256B56 /* XPYEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYEnums.h; sourceTree = "<group>"; };
+		6CED67D724C53D01002AA820 /* XPYTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTabBarController.h; sourceTree = "<group>"; };
+		6CED67D824C53D01002AA820 /* XPYTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTabBarController.m; sourceTree = "<group>"; };
+		6CED67DA24C57823002AA820 /* XPYArchiveManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYArchiveManager.h; sourceTree = "<group>"; };
+		6CED67DB24C57823002AA820 /* XPYArchiveManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYArchiveManager.m; sourceTree = "<group>"; };
+		6CED67DD24C5968D002AA820 /* XPYConstInline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYConstInline.h; sourceTree = "<group>"; };
+		6CED67DF24C686A2002AA820 /* XPYUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYUtilities.h; sourceTree = "<group>"; };
+		6CED67E024C686A3002AA820 /* XPYUtilitiesDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYUtilitiesDefine.h; sourceTree = "<group>"; };
+		6CED67E124C686A3002AA820 /* XPYUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYUtilities.m; sourceTree = "<group>"; };
 		8C913CB48FFDF1D91FC10E1A /* Pods-XPYMoments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPYMoments.release.xcconfig"; path = "Target Support Files/Pods-XPYMoments/Pods-XPYMoments.release.xcconfig"; sourceTree = "<group>"; };
 		AE7AFAF554AA95800D05B10B /* Pods-XPYMoments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPYMoments.debug.xcconfig"; path = "Target Support Files/Pods-XPYMoments/Pods-XPYMoments.debug.xcconfig"; sourceTree = "<group>"; };
 		C5F8586A6DF8A7FAC351C49C /* libPods-XPYMoments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPYMoments.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,9 +193,10 @@
 		6C19626C247E551E004EAE3B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6CED67DE24C6868B002AA820 /* Utility */,
 				6C4F79752490B0F400D46D3F /* Helper */,
 				6C4F79712490816600D46D3F /* Router */,
-				6C7C5B582488F556007951F5 /* FileManager */,
+				6C7C5B582488F556007951F5 /* Archive */,
 				6C1962912480E1E0004EAE3B /* Network */,
 			);
 			path = Utils;
@@ -195,6 +207,7 @@
 			children = (
 				6CDFAF6A2484A3A800256B56 /* XPYMacros.h */,
 				6CDFAF732484EBCF00256B56 /* XPYEnums.h */,
+				6CED67DD24C5968D002AA820 /* XPYConstInline.h */,
 				6CDFAF6B2484A55100256B56 /* XPYConstant.h */,
 				6CDFAF6C2484A55100256B56 /* XPYConstant.m */,
 			);
@@ -208,6 +221,8 @@
 				6C196270247E68C8004EAE3B /* XPYBaseViewController.m */,
 				6C4F796B248F7AC900D46D3F /* XPYNavigationViewController.h */,
 				6C4F796C248F7AC900D46D3F /* XPYNavigationViewController.m */,
+				6CED67D724C53D01002AA820 /* XPYTabBarController.h */,
+				6CED67D824C53D01002AA820 /* XPYTabBarController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -291,11 +306,13 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		6C7C5B582488F556007951F5 /* FileManager */ = {
+		6C7C5B582488F556007951F5 /* Archive */ = {
 			isa = PBXGroup;
 			children = (
+				6CED67DA24C57823002AA820 /* XPYArchiveManager.h */,
+				6CED67DB24C57823002AA820 /* XPYArchiveManager.m */,
 			);
-			path = FileManager;
+			path = Archive;
 			sourceTree = "<group>";
 		};
 		6CA506372486395E009CDA2F /* Request */ = {
@@ -334,6 +351,16 @@
 				6CA5063424863293009CDA2F /* XPYNetworkService.m */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		6CED67DE24C6868B002AA820 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6CED67DF24C686A2002AA820 /* XPYUtilities.h */,
+				6CED67E124C686A3002AA820 /* XPYUtilities.m */,
+				6CED67E024C686A3002AA820 /* XPYUtilitiesDefine.h */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		91841E581F78C7205F02EA16 /* Frameworks */ = {
@@ -469,8 +496,11 @@
 				6C196280247E6F39004EAE3B /* XPYTestViewModel.m in Sources */,
 				6C19627C247E6F11004EAE3B /* XPYTestViewController.m in Sources */,
 				6C196250247E498C004EAE3B /* AppDelegate.m in Sources */,
+				6CED67E224C686A3002AA820 /* XPYUtilities.m in Sources */,
 				6CA5064324864886009CDA2F /* XPYUserModel.m in Sources */,
 				6CDFAF6D2484A55100256B56 /* XPYConstant.m in Sources */,
+				6CED67D924C53D01002AA820 /* XPYTabBarController.m in Sources */,
+				6CED67DC24C57823002AA820 /* XPYArchiveManager.m in Sources */,
 				6CA50640248647E2009CDA2F /* XPYBaseModel.m in Sources */,
 				6C4F79742490818100D46D3F /* XPYRouter.m in Sources */,
 				6C19628F2480A99D004EAE3B /* XPYViewModelServices.m in Sources */,

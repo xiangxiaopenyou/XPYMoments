@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XPYNetworkService (User)
 
+/// 用户登录
+/// @param username 用户名
+/// @param password 密码
+- (RACSignal *)loginWithUsername:(NSString *)username password:(NSString *)password;
+
 - (RACSignal *)homepageData;
 
 @end

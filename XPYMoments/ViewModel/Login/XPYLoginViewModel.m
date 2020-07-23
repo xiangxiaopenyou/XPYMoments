@@ -14,6 +14,9 @@
 @property (nonatomic, copy) NSString *usernameString;
 @property (nonatomic, copy) NSString *passwordString;
 
+@property (nonatomic, strong) RACSignal *loginValidSignal;
+@property (nonatomic, strong) RACCommand *loginCommand;
+
 @end
 
 @implementation XPYLoginViewModel
@@ -26,8 +29,7 @@
     self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
         return [[[[self loginRequest] doNext:^(id  _Nullable x) {
             // 请求完成之后的操作
-            [[NSUserDefaults standardUserDefaults] setObject:@YES forKey:@"Login"];
-            [[NSUserDefaults standardUserDefaults] synchronize];
+            
         }] doCompleted:^{
             [[NSNotificationCenter defaultCenter] postNotificationName:XPYSwitchRootViewControllerNotification object:nil];
         }] doError:^(NSError * _Nonnull error) {
@@ -36,7 +38,8 @@
 }
 
 - (RACSignal *)loginRequest {
-    return [self.services.networkService homepageData];
+    return [self.services.networkService loginWithUsername:self.usernameString password:self.passwordString];
+    //return [self.services.networkService homepageData];
 }
 
 @end

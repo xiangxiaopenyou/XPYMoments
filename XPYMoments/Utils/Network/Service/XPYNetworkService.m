@@ -48,6 +48,7 @@ static NSString * const kXPYVersion = @"1.4.0";
     return self;
 }
 
+#pragma mark - Private methods
 /// 获取完整请求链接
 /// @param path 路径
 /// @param type 请求类型
@@ -108,9 +109,15 @@ static NSString * const kXPYVersion = @"1.4.0";
             }];
         } else if (type == XPYHTTPRequestTypePost) {
             [self.manager postWithURL:[self completeRequestURLStringWithPath:path requestType:type] parameters:[self completeParametersWithParams:parameters] success:^(id  _Nonnull responseObject) {
-                
+                id result = [self resultWithResponseObject:responseObject];
+                if ([result isMemberOfClass:[NSError class]]) {
+                    [subscriber sendError:result];
+                } else {
+                    [subscriber sendNext:result];
+                    [subscriber sendCompleted];
+                }
             } failure:^(NSError * _Nonnull error) {
-                
+                [subscriber sendError:error];
             }];
         }
         return [RACDisposable disposableWithBlock:^{
