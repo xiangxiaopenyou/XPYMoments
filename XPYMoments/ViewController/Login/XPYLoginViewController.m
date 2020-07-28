@@ -9,8 +9,6 @@
 #import "XPYLoginViewController.h"
 #import "XPYLoginViewModel.h"
 
-#import <MBProgressHUD.h>
-
 @interface XPYLoginViewController ()
 
 @property (nonatomic, strong) UITextField *usernameTextField;
@@ -40,7 +38,7 @@
     
     [self.usernameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_offset(CGSizeMake(300, 50));
-        make.top.equalTo(self.view.mas_top).mas_offset(80);
+        make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop).mas_offset(50);
         make.centerX.equalTo(self.view);
     }];
     
@@ -77,14 +75,16 @@
     }];
     
     // HUD
-    [[self.viewModel.loginCommand.executing skip:1] subscribeNext:^(NSNumber * _Nullable x) {
+    [[[self.viewModel.loginCommand.executing skip:1] deliverOnMainThread] subscribeNext:^(NSNumber * _Nullable x) {
+        [self.view endEditing:YES];
         if (x.boolValue) {
-            [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        } else {
-            [MBProgressHUD hideHUDForView:self.view animated:YES];
+            [MBProgressHUD xpy_showActivityHUDWithTips:nil];
+        } else if (!self.viewModel.loginCommand.errors) {   // 没有错误时隐藏
+            [MBProgressHUD xpy_hideHUD];
         }
-    } error:^(NSError * _Nullable error) {
-    } completed:^{
+    }];
+    [[self.viewModel.loginCommand.errors deliverOnMainThread] subscribeNext:^(NSError * _Nullable x) {
+        [MBProgressHUD xpy_showTips:x.userInfo[NSUnderlyingErrorKey]];
     }];
 }
 

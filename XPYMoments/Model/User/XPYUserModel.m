@@ -10,6 +10,14 @@
 
 @implementation XPYUserModel
 
++ (NSDictionary<NSString *,id> *)modelCustomPropertyMapper {
+    return @{
+        @"userId" : @"user_id",
+        @"phone" : @"tel",
+        @"gender" : @"sex"
+    };
+}
+
 - (void)encodeWithCoder:(nonnull NSCoder *)coder {
     [self yy_modelEncodeWithCoder:coder];
 }
@@ -17,6 +25,7 @@
 - (nullable instancetype)initWithCoder:(nonnull NSCoder *)coder {
     return [self yy_modelInitWithCoder:coder];
 }
+
 + (BOOL)supportsSecureCoding {
     return YES;
 }

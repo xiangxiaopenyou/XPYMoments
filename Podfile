@@ -23,4 +23,7 @@ target 'XPYMoments' do
   # 数据模型
   pod 'YYModel'
   
+  # 加密
+  pod 'CocoaSecurity'
+  
 end

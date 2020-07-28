@@ -11,7 +11,8 @@
 @implementation XPYViewControllerHelper
 
 + (UIViewController *)currentViewController {
-    UIViewController *controller = [UIApplication sharedApplication].delegate.window.rootViewController;
+    UIWindow *window = [UIApplication sharedApplication].delegate.window ? [UIApplication sharedApplication].delegate.window : [UIApplication sharedApplication].windows.lastObject;
+    UIViewController *controller = window.rootViewController;
     return [self topViewController:controller];
 }
 

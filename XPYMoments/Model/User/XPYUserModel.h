@@ -13,8 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface XPYUserModel : XPYBaseModel <NSSecureCoding>
 
 @property (nonatomic, copy) NSString *userId;
-@property (nonatomic, copy) NSString *username;
+@property (nonatomic, copy) NSString *token;
+@property (nonatomic, copy) NSString *nickname;
 @property (nonatomic, copy) NSString *phone;
+/// 性别
+@property (nonatomic, assign) NSInteger gender;
 
 @end
 

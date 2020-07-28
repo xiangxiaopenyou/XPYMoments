@@ -11,6 +11,8 @@
 
 #import "XPYMacros.h"
 #import "XPYUtilitiesDefine.h"
+#import "XPYUserManager.h"
+#import "MBProgressHUD+XPYExtension.h"
 
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <Masonry/Masonry.h>

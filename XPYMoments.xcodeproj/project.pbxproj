@@ -30,6 +30,8 @@
 		6CA5064324864886009CDA2F /* XPYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5064224864886009CDA2F /* XPYUserModel.m */; };
 		6CDFAF6D2484A55100256B56 /* XPYConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFAF6C2484A55100256B56 /* XPYConstant.m */; };
 		6CDFAF702484AF0300256B56 /* XPYNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */; };
+		6CE924D724CE81B9000AA12F /* MBProgressHUD+XPYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924D624CE81B9000AA12F /* MBProgressHUD+XPYExtension.m */; };
+		6CE924DF24CECE77000AA12F /* XPYUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924DE24CECE77000AA12F /* XPYUserManager.m */; };
 		6CED67D924C53D01002AA820 /* XPYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED67D824C53D01002AA820 /* XPYTabBarController.m */; };
 		6CED67DC24C57823002AA820 /* XPYArchiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED67DB24C57823002AA820 /* XPYArchiveManager.m */; };
 		6CED67E224C686A3002AA820 /* XPYUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED67E124C686A3002AA820 /* XPYUtilities.m */; };
@@ -83,6 +85,10 @@
 		6CDFAF6E2484AF0300256B56 /* XPYNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYNetworkManager.h; sourceTree = "<group>"; };
 		6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYNetworkManager.m; sourceTree = "<group>"; };
 		6CDFAF732484EBCF00256B56 /* XPYEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYEnums.h; sourceTree = "<group>"; };
+		6CE924D524CE81B9000AA12F /* MBProgressHUD+XPYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XPYExtension.h"; sourceTree = "<group>"; };
+		6CE924D624CE81B9000AA12F /* MBProgressHUD+XPYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XPYExtension.m"; sourceTree = "<group>"; };
+		6CE924DD24CECE77000AA12F /* XPYUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYUserManager.h; sourceTree = "<group>"; };
+		6CE924DE24CECE77000AA12F /* XPYUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYUserManager.m; sourceTree = "<group>"; };
 		6CED67D724C53D01002AA820 /* XPYTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTabBarController.h; sourceTree = "<group>"; };
 		6CED67D824C53D01002AA820 /* XPYTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTabBarController.m; sourceTree = "<group>"; };
 		6CED67DA24C57823002AA820 /* XPYArchiveManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYArchiveManager.h; sourceTree = "<group>"; };
@@ -196,8 +202,9 @@
 				6CED67DE24C6868B002AA820 /* Utility */,
 				6C4F79752490B0F400D46D3F /* Helper */,
 				6C4F79712490816600D46D3F /* Router */,
-				6C7C5B582488F556007951F5 /* Archive */,
 				6C1962912480E1E0004EAE3B /* Network */,
+				6CE924D824CECCB5000AA12F /* Manager */,
+				6CE924D324CE8155000AA12F /* Category */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -353,6 +360,41 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		6CE924D324CE8155000AA12F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6CE924D424CE8175000AA12F /* MBProgressHUD */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6CE924D424CE8175000AA12F /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6CE924D524CE81B9000AA12F /* MBProgressHUD+XPYExtension.h */,
+				6CE924D624CE81B9000AA12F /* MBProgressHUD+XPYExtension.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		6CE924D824CECCB5000AA12F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6CE924D924CECCE3000AA12F /* User */,
+				6C7C5B582488F556007951F5 /* Archive */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6CE924D924CECCE3000AA12F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				6CE924DD24CECE77000AA12F /* XPYUserManager.h */,
+				6CE924DE24CECE77000AA12F /* XPYUserManager.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		6CED67DE24C6868B002AA820 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,6 +547,7 @@
 				6C4F79742490818100D46D3F /* XPYRouter.m in Sources */,
 				6C19628F2480A99D004EAE3B /* XPYViewModelServices.m in Sources */,
 				6C4F797B2490C12E00D46D3F /* XPYTestPushViewController.m in Sources */,
+				6CE924DF24CECE77000AA12F /* XPYUserManager.m in Sources */,
 				6C196278247E6E50004EAE3B /* XPYBaseViewModel.m in Sources */,
 				6C4F796D248F7AC900D46D3F /* XPYNavigationViewController.m in Sources */,
 				6C9D1FE724889E540055BD04 /* XPYNetworkService+User.m in Sources */,
@@ -514,6 +557,7 @@
 				6C196261247E4991004EAE3B /* main.m in Sources */,
 				6C196286247F64E7004EAE3B /* XPYLoginViewController.m in Sources */,
 				6CA5063524863293009CDA2F /* XPYNetworkService.m in Sources */,
+				6CE924D724CE81B9000AA12F /* MBProgressHUD+XPYExtension.m in Sources */,
 				6CDFAF702484AF0300256B56 /* XPYNetworkManager.m in Sources */,
 				6C4F79782490B11400D46D3F /* XPYViewControllerHelper.m in Sources */,
 			);
@@ -650,6 +694,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202005271602;
+				DEVELOPMENT_TEAM = RLWJB4A9U9;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XPYMoments/XPYMoments.pch";
@@ -671,6 +716,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202005271602;
+				DEVELOPMENT_TEAM = RLWJB4A9U9;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XPYMoments/XPYMoments.pch";

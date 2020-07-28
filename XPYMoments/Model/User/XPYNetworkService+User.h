@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param password 密码
 - (RACSignal *)loginWithUsername:(NSString *)username password:(NSString *)password;
 
-- (RACSignal *)homepageData;
+//- (RACSignal *)homepageData;
 
 @end
 

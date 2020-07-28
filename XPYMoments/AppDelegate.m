@@ -41,8 +41,7 @@
     [self.services resetRootViewModel:[self rootViewModel]];
 }
 - (XPYBaseViewModel *)rootViewModel {
-    id object = [[NSUserDefaults standardUserDefaults] objectForKey:@"Login"];
-    if (object) {
+    if ([XPYUserManager shareInstance].isLogin) {
         return [[XPYTestViewModel alloc] initWithServices:self.services];
     } else {
         return [[XPYLoginViewModel alloc] initWithServices:self.services];

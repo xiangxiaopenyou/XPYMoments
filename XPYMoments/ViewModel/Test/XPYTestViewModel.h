@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) RACCommand *pushCommand;
 
+@property (nonatomic, strong, readonly) RACCommand *logoutCommand;
+
 @end
 
 NS_ASSUME_NONNULL_END

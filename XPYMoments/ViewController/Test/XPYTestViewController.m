@@ -10,6 +10,8 @@
 
 #import "XPYTestViewModel.h"
 
+#import "MBProgressHUD+XPYExtension.h"
+
 @interface XPYTestViewController ()
 
 @property (nonatomic, strong) XPYTestViewModel *viewModel;
@@ -25,7 +27,7 @@
     [super viewDidLoad];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setTitle:@"测试" forState:UIControlStateNormal];
+    [button setTitle:@"Push" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont boldSystemFontOfSize:28];
     [self.view addSubview:button];
@@ -35,6 +37,23 @@
     [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         [self.viewModel.pushCommand execute:nil];
     }];
+    
+    UIButton *logoutButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [logoutButton setTitle:@"退出登录" forState:UIControlStateNormal];
+    [logoutButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    logoutButton.titleLabel.font = [UIFont boldSystemFontOfSize:28];
+    [self.view addSubview:logoutButton];
+    [logoutButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(button.mas_bottom).mas_offset(100);
+    }];
+    
+    [[logoutButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [self.viewModel.logoutCommand execute:nil];
+    }];
+}
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 }
 
 #pragma mark - Override methods

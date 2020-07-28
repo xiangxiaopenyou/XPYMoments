@@ -21,7 +21,7 @@ static NSString * const kXPYBaseURL = @"";
 static NSString * const kXPYChannelId = @"u2000";
 static NSInteger const kXPYClientType = 2;
 static NSString * const kXPYDeviceToken = @"54A26B87-4B33-468B-99D3-1A8651B6CD81";
-static NSString * const kXPYVersion = @"1.4.0";
+static NSString * const kXPYVersion = @"3.0.0";
 
 @interface XPYNetworkService ()
 
@@ -66,10 +66,10 @@ static NSString * const kXPYVersion = @"1.4.0";
     [temp setObject:kXPYChannelId forKey:@"channel_id"];
     [temp setObject:@(kXPYClientType) forKey:@"client_type"];
     [temp setObject:kXPYDeviceToken forKey:@"device_token"];
-    // 先判断是否保存了UserId和Token(根据需求自由发挥)
-    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"XPYUserId"]) {
-        [temp setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"XPYUserId"] forKey:@"user_id"];
-        [temp setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"XPYUserToken"]  forKey:@"token"];
+    // 先判断是否已经登录(根据需求自由发挥，这里传了userId和token)
+    if ([XPYUserManager shareInstance].isLogin) {
+        [temp setObject:[XPYUserManager shareInstance].currentUser.userId forKey:@"user_id"];
+        [temp setObject:[XPYUserManager shareInstance].currentUser.token  forKey:@"token"];
     }
 
     [temp setObject:kXPYVersion forKey:@"version"];
