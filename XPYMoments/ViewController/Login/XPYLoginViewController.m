@@ -15,13 +15,13 @@
 @property (nonatomic, strong) UITextField *passwordTextField;
 @property (nonatomic, strong) UIButton *loginButton;
 
-@property (nonatomic, strong) XPYLoginViewModel *viewModel;
+@property (nonatomic, strong, readonly) XPYLoginViewModel *viewModel;
 
 @end
 
 @implementation XPYLoginViewController
 
-/// 从父类(XPYBaseViewController)中查找Set和Get方法
+/// 动态绑定，运行时从父类(XPYBaseViewController)中查找Getter方法
 @dynamic viewModel;
 
 #pragma mark - Life cycle

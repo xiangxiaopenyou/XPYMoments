@@ -20,11 +20,4 @@
     return resultSignal;
 }
 
-//- (RACSignal *)homepageData {
-//    RACSignal *resultSignal = [[self request:XPYHTTPRequestTypeGet path:@"book-city?action=db-home" parameters:@{@"page" : @1}] map:^id _Nullable(id  _Nullable value) {
-//        NSLog(@"%@", value);
-//    }];
-//    return resultSignal;
-//}
-
 @end

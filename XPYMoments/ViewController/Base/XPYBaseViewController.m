@@ -11,7 +11,7 @@
 
 @interface XPYBaseViewController ()
 
-/// 子类中使用@dynamic viewModel（不实现get和set方法），则需要从父类中查找相应方法
+/// 子类中使用@dynamic viewModel（不实现Getter方法），则需要从父类中查找相应方法
 @property (nonatomic, strong) XPYBaseViewModel *viewModel;
 
 @end
@@ -38,6 +38,8 @@
 
 #pragma mark - Instance methods
 - (void)bindViewModel {
+    // 绑定页面标题
+    RAC(self, title) = RACObserve(self.viewModel, title);
     NSLog(@"bind success");
 }
 

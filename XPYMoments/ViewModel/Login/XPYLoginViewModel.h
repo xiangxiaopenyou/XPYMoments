@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 登录命令
 @property (nonatomic, strong, readonly) RACCommand *loginCommand;
 
+
 @end
 
 NS_ASSUME_NONNULL_END

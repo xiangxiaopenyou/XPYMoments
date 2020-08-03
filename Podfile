@@ -26,4 +26,7 @@ target 'XPYMoments' do
   # 加密
   pod 'CocoaSecurity'
   
+  # 键盘管理
+  pod 'IQKeyboardManager'
+  
 end

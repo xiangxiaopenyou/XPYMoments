@@ -32,6 +32,14 @@
 		6CDFAF702484AF0300256B56 /* XPYNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFAF6F2484AF0300256B56 /* XPYNetworkManager.m */; };
 		6CE924D724CE81B9000AA12F /* MBProgressHUD+XPYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924D624CE81B9000AA12F /* MBProgressHUD+XPYExtension.m */; };
 		6CE924DF24CECE77000AA12F /* XPYUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924DE24CECE77000AA12F /* XPYUserManager.m */; };
+		6CE924E224D170A4000AA12F /* XPYTabBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924E124D170A4000AA12F /* XPYTabBarViewModel.m */; };
+		6CE924E624D171A0000AA12F /* XPYMomentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924E524D171A0000AA12F /* XPYMomentsViewController.m */; };
+		6CE924EA24D1745F000AA12F /* XPYMomentsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924E924D1745F000AA12F /* XPYMomentsViewModel.m */; };
+		6CE924EE24D2B2C1000AA12F /* XPYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924ED24D2B2C1000AA12F /* XPYTableView.m */; };
+		6CE924F124D2B7BE000AA12F /* XPYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924F024D2B7BE000AA12F /* XPYTableViewController.m */; };
+		6CE924F424D2B807000AA12F /* XPYTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924F324D2B807000AA12F /* XPYTableViewModel.m */; };
+		6CE924F724D3B004000AA12F /* XPYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924F624D3B004000AA12F /* XPYTableViewCell.m */; };
+		6CE924FB24D3C014000AA12F /* XPYMomentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE924FA24D3C014000AA12F /* XPYMomentsTableViewCell.m */; };
 		6CED67D924C53D01002AA820 /* XPYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED67D824C53D01002AA820 /* XPYTabBarController.m */; };
 		6CED67DC24C57823002AA820 /* XPYArchiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED67DB24C57823002AA820 /* XPYArchiveManager.m */; };
 		6CED67E224C686A3002AA820 /* XPYUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CED67E124C686A3002AA820 /* XPYUtilities.m */; };
@@ -89,6 +97,22 @@
 		6CE924D624CE81B9000AA12F /* MBProgressHUD+XPYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XPYExtension.m"; sourceTree = "<group>"; };
 		6CE924DD24CECE77000AA12F /* XPYUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYUserManager.h; sourceTree = "<group>"; };
 		6CE924DE24CECE77000AA12F /* XPYUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYUserManager.m; sourceTree = "<group>"; };
+		6CE924E024D170A4000AA12F /* XPYTabBarViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTabBarViewModel.h; sourceTree = "<group>"; };
+		6CE924E124D170A4000AA12F /* XPYTabBarViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTabBarViewModel.m; sourceTree = "<group>"; };
+		6CE924E424D171A0000AA12F /* XPYMomentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMomentsViewController.h; sourceTree = "<group>"; };
+		6CE924E524D171A0000AA12F /* XPYMomentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMomentsViewController.m; sourceTree = "<group>"; };
+		6CE924E824D1745F000AA12F /* XPYMomentsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMomentsViewModel.h; sourceTree = "<group>"; };
+		6CE924E924D1745F000AA12F /* XPYMomentsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMomentsViewModel.m; sourceTree = "<group>"; };
+		6CE924EC24D2B2C1000AA12F /* XPYTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTableView.h; sourceTree = "<group>"; };
+		6CE924ED24D2B2C1000AA12F /* XPYTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTableView.m; sourceTree = "<group>"; };
+		6CE924EF24D2B7BE000AA12F /* XPYTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTableViewController.h; sourceTree = "<group>"; };
+		6CE924F024D2B7BE000AA12F /* XPYTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTableViewController.m; sourceTree = "<group>"; };
+		6CE924F224D2B807000AA12F /* XPYTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTableViewModel.h; sourceTree = "<group>"; };
+		6CE924F324D2B807000AA12F /* XPYTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTableViewModel.m; sourceTree = "<group>"; };
+		6CE924F524D3B004000AA12F /* XPYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTableViewCell.h; sourceTree = "<group>"; };
+		6CE924F624D3B004000AA12F /* XPYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTableViewCell.m; sourceTree = "<group>"; };
+		6CE924F924D3C014000AA12F /* XPYMomentsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYMomentsTableViewCell.h; sourceTree = "<group>"; };
+		6CE924FA24D3C014000AA12F /* XPYMomentsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYMomentsTableViewCell.m; sourceTree = "<group>"; };
 		6CED67D724C53D01002AA820 /* XPYTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYTabBarController.h; sourceTree = "<group>"; };
 		6CED67D824C53D01002AA820 /* XPYTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPYTabBarController.m; sourceTree = "<group>"; };
 		6CED67DA24C57823002AA820 /* XPYArchiveManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPYArchiveManager.h; sourceTree = "<group>"; };
@@ -158,6 +182,7 @@
 			children = (
 				6C19626E247E68A6004EAE3B /* Base */,
 				6C196283247F64CB004EAE3B /* Login */,
+				6CE924E324D17167000AA12F /* Moments */,
 				6C196279247E6EFB004EAE3B /* Test */,
 			);
 			path = ViewController;
@@ -166,6 +191,8 @@
 		6C196268247E528B004EAE3B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6CE924EB24D2B2AC000AA12F /* Base */,
+				6CE924F824D3BFDF000AA12F /* Moments */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +202,7 @@
 			children = (
 				6CA5063C24864761009CDA2F /* Base */,
 				6CA5063D24864771009CDA2F /* User */,
+				6CE924FC24D3C81E000AA12F /* Moments */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +212,7 @@
 			children = (
 				6C196275247E6B43004EAE3B /* Base */,
 				6C196287247F64F3004EAE3B /* Login */,
+				6CE924E724D17442000AA12F /* Moments */,
 				6C19627D247E6F15004EAE3B /* Test */,
 			);
 			path = ViewModel;
@@ -230,6 +259,8 @@
 				6C4F796C248F7AC900D46D3F /* XPYNavigationViewController.m */,
 				6CED67D724C53D01002AA820 /* XPYTabBarController.h */,
 				6CED67D824C53D01002AA820 /* XPYTabBarController.m */,
+				6CE924EF24D2B7BE000AA12F /* XPYTableViewController.h */,
+				6CE924F024D2B7BE000AA12F /* XPYTableViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -242,6 +273,10 @@
 				6C19628E2480A99D004EAE3B /* XPYViewModelServices.m */,
 				6C196276247E6E50004EAE3B /* XPYBaseViewModel.h */,
 				6C196277247E6E50004EAE3B /* XPYBaseViewModel.m */,
+				6CE924E024D170A4000AA12F /* XPYTabBarViewModel.h */,
+				6CE924E124D170A4000AA12F /* XPYTabBarViewModel.m */,
+				6CE924F224D2B807000AA12F /* XPYTableViewModel.h */,
+				6CE924F324D2B807000AA12F /* XPYTableViewModel.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -395,6 +430,51 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		6CE924E324D17167000AA12F /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				6CE924E424D171A0000AA12F /* XPYMomentsViewController.h */,
+				6CE924E524D171A0000AA12F /* XPYMomentsViewController.m */,
+			);
+			path = Moments;
+			sourceTree = "<group>";
+		};
+		6CE924E724D17442000AA12F /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				6CE924E824D1745F000AA12F /* XPYMomentsViewModel.h */,
+				6CE924E924D1745F000AA12F /* XPYMomentsViewModel.m */,
+			);
+			path = Moments;
+			sourceTree = "<group>";
+		};
+		6CE924EB24D2B2AC000AA12F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6CE924EC24D2B2C1000AA12F /* XPYTableView.h */,
+				6CE924ED24D2B2C1000AA12F /* XPYTableView.m */,
+				6CE924F524D3B004000AA12F /* XPYTableViewCell.h */,
+				6CE924F624D3B004000AA12F /* XPYTableViewCell.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6CE924F824D3BFDF000AA12F /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				6CE924F924D3C014000AA12F /* XPYMomentsTableViewCell.h */,
+				6CE924FA24D3C014000AA12F /* XPYMomentsTableViewCell.m */,
+			);
+			path = Moments;
+			sourceTree = "<group>";
+		};
+		6CE924FC24D3C81E000AA12F /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Moments;
+			sourceTree = "<group>";
+		};
 		6CED67DE24C6868B002AA820 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CE924EA24D1745F000AA12F /* XPYMomentsViewModel.m in Sources */,
 				6C196280247E6F39004EAE3B /* XPYTestViewModel.m in Sources */,
 				6C19627C247E6F11004EAE3B /* XPYTestViewController.m in Sources */,
 				6C196250247E498C004EAE3B /* AppDelegate.m in Sources */,
@@ -543,11 +624,15 @@
 				6CDFAF6D2484A55100256B56 /* XPYConstant.m in Sources */,
 				6CED67D924C53D01002AA820 /* XPYTabBarController.m in Sources */,
 				6CED67DC24C57823002AA820 /* XPYArchiveManager.m in Sources */,
+				6CE924E224D170A4000AA12F /* XPYTabBarViewModel.m in Sources */,
 				6CA50640248647E2009CDA2F /* XPYBaseModel.m in Sources */,
+				6CE924F424D2B807000AA12F /* XPYTableViewModel.m in Sources */,
 				6C4F79742490818100D46D3F /* XPYRouter.m in Sources */,
 				6C19628F2480A99D004EAE3B /* XPYViewModelServices.m in Sources */,
+				6CE924EE24D2B2C1000AA12F /* XPYTableView.m in Sources */,
 				6C4F797B2490C12E00D46D3F /* XPYTestPushViewController.m in Sources */,
 				6CE924DF24CECE77000AA12F /* XPYUserManager.m in Sources */,
+				6CE924F724D3B004000AA12F /* XPYTableViewCell.m in Sources */,
 				6C196278247E6E50004EAE3B /* XPYBaseViewModel.m in Sources */,
 				6C4F796D248F7AC900D46D3F /* XPYNavigationViewController.m in Sources */,
 				6C9D1FE724889E540055BD04 /* XPYNetworkService+User.m in Sources */,
@@ -559,7 +644,10 @@
 				6CA5063524863293009CDA2F /* XPYNetworkService.m in Sources */,
 				6CE924D724CE81B9000AA12F /* MBProgressHUD+XPYExtension.m in Sources */,
 				6CDFAF702484AF0300256B56 /* XPYNetworkManager.m in Sources */,
+				6CE924E624D171A0000AA12F /* XPYMomentsViewController.m in Sources */,
+				6CE924FB24D3C014000AA12F /* XPYMomentsTableViewCell.m in Sources */,
 				6C4F79782490B11400D46D3F /* XPYViewControllerHelper.m in Sources */,
+				6CE924F124D2B7BE000AA12F /* XPYTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,7 +781,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 202005271602;
+				CURRENT_PROJECT_VERSION = 202007311133;
 				DEVELOPMENT_TEAM = RLWJB4A9U9;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -715,7 +803,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 202005271602;
+				CURRENT_PROJECT_VERSION = 202007311133;
 				DEVELOPMENT_TEAM = RLWJB4A9U9;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;

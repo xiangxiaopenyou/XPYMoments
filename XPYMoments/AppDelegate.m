@@ -14,6 +14,8 @@
 
 #import "XPYViewModelServices.h"
 
+#import <IQKeyboardManager.h>
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) XPYViewModelServices *services;
@@ -24,7 +26,7 @@
 
 #pragma mark - Life cycle
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    [self configureKeyboardManager];
     self.services = [[XPYViewModelServices alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -37,6 +39,15 @@
     return YES;
 }
 
+#pragma mark - 初始化配置
+/// 键盘管理
+- (void)configureKeyboardManager {
+    [IQKeyboardManager sharedManager].enable = YES;
+    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+}
+
+#pragma mark - Setup root view controller
 - (void)resetRootViewController {
     [self.services resetRootViewModel:[self rootViewModel]];
 }

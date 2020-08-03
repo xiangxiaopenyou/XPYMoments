@@ -25,24 +25,23 @@
 @implementation XPYLoginViewModel
 
 - (void)initialize {
+    self.title = @"登录";
+    
     self.loginValidSignal = [RACSignal combineLatest:@[RACObserve(self, usernameString), RACObserve(self, passwordString)] reduce:^(NSString *username, NSString *password){
         return @(username.length > 0 && password.length >= 6);
     }];
     
     self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
-        [self loginRequest];
-        return [RACSignal empty];
-    }];
-}
-
-- (void)loginRequest {
-    [[self.services.networkService loginWithUsername:self.usernameString password:[CocoaSecurity md5:self.passwordString].hexLower] subscribeNext:^(id  _Nullable x) {
-        if (x && [x isMemberOfClass:[XPYUserModel class]]) {
-            // 请求完成之后保存用户信息
-            if ([[XPYUserManager shareInstance] saveUser:(XPYUserModel *)x]) {
-                [[NSNotificationCenter defaultCenter] postNotificationName:XPYSwitchRootViewControllerNotification object:nil];
+        RACSignal *loginSignal = [self.services.networkService loginWithUsername:self.usernameString password:[CocoaSecurity md5:self.passwordString].hexLower];
+        [loginSignal subscribeNext:^(id  _Nullable x) {
+            if (x && [x isMemberOfClass:[XPYUserModel class]]) {
+                // 请求完成之后保存用户信息
+                if ([[XPYUserManager shareInstance] saveUser:(XPYUserModel *)x]) {
+                    [[NSNotificationCenter defaultCenter] postNotificationName:XPYSwitchRootViewControllerNotification object:nil];
+                }
             }
-        }
+        }];
+        return loginSignal;
     }];
 }
 

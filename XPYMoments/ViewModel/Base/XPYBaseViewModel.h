@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) XPYViewModelServices *services;
 
+/// 页面Title
+@property (nonatomic, strong) NSString *title;
+
 @end
 
 NS_ASSUME_NONNULL_END
