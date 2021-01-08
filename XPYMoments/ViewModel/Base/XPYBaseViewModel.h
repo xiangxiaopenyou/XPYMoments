@@ -25,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 页面Title
 @property (nonatomic, strong) NSString *title;
 
+/// 页面背景颜色
+@property (nonatomic, strong) UIColor *backgroundColor;
+
 @end
 
 NS_ASSUME_NONNULL_END

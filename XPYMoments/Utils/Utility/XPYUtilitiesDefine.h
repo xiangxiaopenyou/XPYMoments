@@ -7,17 +7,8 @@
 //
 #import "XPYUtilities.h"
 
-/// 弱引用对象
-#define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
-
-/// 强引用对象
-#define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
-
 /// 设备是否iPhoneX系列
 #define XPYDeviceIsIphoneX [XPYUtilities isIphoneX]
-
-/// 以375宽度屏幕为基准自适应
-#define XPYScreenScaleConstant(aConstant) CGRectGetWidth([UIScreen mainScreen].bounds) / 375 * aConstant
 
 /// 根据Hex值和透明度获取颜色
 #define XPYColorFromHexWithAlpha(aHex, aAlpha) [UIColor colorWithRed:((float)((aHex & 0xFF0000) >> 16)) / 255.0 green:((float)((aHex & 0xFF00) >> 8)) / 255.0 blue:((float)(aHex & 0xFF)) / 255.0 alpha:aAlpha]

@@ -13,7 +13,7 @@ FOUNDATION_EXTERN NSString * const XPYMomentsDocumentDirectoryName;
 FOUNDATION_EXTERN NSString * const XPYMomentsUserDataFileName;
 
 #pragma mark - Block
-typedef void(^XPYVoidHandler)(void);
+typedef void (^XPYVoidHandler)(void);
 
 #pragma mark - Notifications
 FOUNDATION_EXTERN NSString * const XPYSwitchRootViewControllerNotification;

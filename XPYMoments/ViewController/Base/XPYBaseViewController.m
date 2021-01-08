@@ -30,9 +30,6 @@
 #pragma mark - Life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor whiteColor];
-    
     [self bindViewModel];
 }
 
@@ -40,6 +37,8 @@
 - (void)bindViewModel {
     // 绑定页面标题
     RAC(self, title) = RACObserve(self.viewModel, title);
+    // 绑定页面背景颜色
+    RAC(self.view, backgroundColor) = RACObserve(self.viewModel, backgroundColor);
     NSLog(@"bind success");
 }
 
